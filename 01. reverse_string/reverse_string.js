@@ -1,20 +1,13 @@
-// Function to factorialize a given integer
+// A function to reverse a given string
 
-function factorialize(num) {
-  // Set a counter for the for loop
-  let count = num;
-    
-  // 0 should return a 1
-  if (count == 0) {
-    num = 1;
-  } else {
-    for (let i = 1; i < count; i++) {
-    // The integer is multiplied by each integer below itself
-    num = num * i;
-    } 
-  }
-  console.log(num);
-  return num;
-  }
+function reverseString(str) {
+  // Split the string into an array
+  let stringAsArray = str.split("");
+  // Reverse the items in the array
+  let reverseArray = stringAsArray.reverse();
+  // Join the items in the array back up into a string
+  str = reverseArray.join("");
+  return str;
+}
 
-factorialize(6);
+reverseString("hello");
