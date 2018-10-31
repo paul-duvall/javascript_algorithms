@@ -3,11 +3,11 @@
 function confirmEnding(str, target) {
 
   // The position of the first letter checked
-  let startNumber = str.length - target.length;
+  const startNumber = str.length - target.length;
   // The position of the last letter checked
-  let endNumber = str.length;
+  const endNumber = str.length;
   // The section of str being checked against
-  let endString = str.substring(startNumber,endNumber);
+  const endString = str.substring(startNumber,endNumber);
 
   if(endString === target) {
     return true;
